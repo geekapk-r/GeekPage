@@ -15,9 +15,28 @@
     text-align: center;
    }
   </style>
+
+  <!-- Matomo -->
+  <script type="text/javascript">
+    var _paq = _paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//piwik.geekapk.org/piwik/";
+      _paq.push(['setTrackerUrl', u+'piwik.php']);
+      _paq.push(['setSiteId', '3']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+
+  <script>
+  if (dh=(new Date()).getHours() >= 19||(dh <= 6)) { document.styleSheets[0].cssRules[0].style.backgroundColor='black' }
+  </script>
 </head>
 <body>
- <a href="https://geekapk.org"><img alt="GeekApk" src="statics.geekapk.com/GA.jpg" width="20%" height="20%" /></a>
- <div>Comming Soon...</div>
+  <h1 onclick="window.location='https://geekapk.org'">Coming Soon...</h1>
 </body>
 </html>
