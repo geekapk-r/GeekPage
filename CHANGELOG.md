@@ -21,3 +21,7 @@
 EditorConfig
 
 Pages
+
+## #4
+
+修复 ERB 页面的格式问题

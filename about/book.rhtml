@@ -53,16 +53,13 @@
     s.split('---')[0].split('!!!')[0]
   end
 %>
-
-  <body>
-    <%=
+<body><%=
   buf = ''
   paras.each do |p|
     buf += "\n  <!-- #{get_head(p).strip} -->\n"
     buf += "  <p class=\"geetext\">#{get_body(p).strip}</p>\n"
     buf += "  <p class=\"from\">#{get_from(p).strip}</p>\n"
   end;buf
-%>
-  </body>
+%></body>
 
 </html>
