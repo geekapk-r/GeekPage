@@ -9,8 +9,8 @@ if ARGV[0] == 'clean'
   exit
 end
 
-template_index = ERB.new(File.read 'index.rhtml')
-template_book = ERB.new(File.read 'book.rhtml')
+template_index = ERB.new File.read('index.rhtml')
+template_book = ERB.new File.read('book.rhtml')
 
 idx = File.read 'index.src'
 bok = File.read 'book.src'

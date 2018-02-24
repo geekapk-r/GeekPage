@@ -20,7 +20,7 @@
   end
 %>
 <body><%=
-  buf = ""
+  buf = ''
   paras.each do |p|
     buf += "\n  <!-- #{get_head(p).strip} -->\n"
     buf += "  <p class=\"geetext\">#{get_body(p).strip}</p>\n"
