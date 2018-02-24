@@ -1,10 +1,44 @@
 <!DOCTYPE html>
-<html lang="en-US" dir="ltr">
+<html lang="zh-CN" dir="ltr">
+
 <head>
   <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
   <title>The Book of GeekApk</title>
 
-  <style>html{background:#009788;color:#fff;font-style:italic}.geetext{font-family:serif;font-size:1.1em;line-height:1.5;margin-top:15%;text-align:center}.from{font-family:serif;font-size:1.95em;text-align:right}em{font-size:1.3em;line-height:0}.f{padding-left:.2ex}a{color:#fff;text-decoration:none}
+  <style>
+    html {
+      background: #009788;
+      color: #fff;
+      font-style: italic
+    }
+
+    .geetext {
+      font-family: serif;
+      font-size: 1.1em;
+      line-height: 1.5;
+      margin-top: 15%;
+      text-align: center
+    }
+
+    .from {
+      font-family: serif;
+      font-size: 1.95em;
+      text-align: right
+    }
+
+    em {
+      font-size: 1.3em;
+      line-height: 0
+    }
+
+    .f {
+      padding-left: .2ex
+    }
+
+    a {
+      color: #fff;
+      text-decoration: none
+    }
   </style>
 </head>
 <%
@@ -19,12 +53,16 @@
     s.split('---')[0].split('!!!')[0]
   end
 %>
-<body><%=
+
+  <body>
+    <%=
   buf = ''
   paras.each do |p|
     buf += "\n  <!-- #{get_head(p).strip} -->\n"
     buf += "  <p class=\"geetext\">#{get_body(p).strip}</p>\n"
     buf += "  <p class=\"from\">#{get_from(p).strip}</p>\n"
   end;buf
-%></body>
+%>
+  </body>
+
 </html>

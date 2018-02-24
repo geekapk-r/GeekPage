@@ -13,3 +13,11 @@
 主页 OG 小改动
 
 预备 CI 自动部署
+
+## #3
+
+主页小改动
+
+EditorConfig
+
+Pages

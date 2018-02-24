@@ -1,0 +1,12 @@
+image: ruby:2.3
+
+pages:
+  stage: deploy
+  script:
+  - cd about;ruby -E utf-8 gen.rb;cd ..
+  - mkdir public;cp -r about dev geekapk web public
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
