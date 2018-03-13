@@ -39,8 +39,29 @@
     </script>
     <!-- End Matomo Code -->
 
+    <script type="text/javascript">
+       document.domain="test.com";
+       function doAjax(callback){
+　　　　　　　　 var url=path+"/public/monitorAjax.do"
+             $.ajax({
+                   type:'post',
+                   url:url,
+                   data:{},
+                   async:false,
+                   dataType: "json",
+                   success:function(data){
+                       callback(data);
+                   },
+                   error:function(error){
+                       alert(error);
+                   }
+               })
+       }
+     </script>
+
     <script>
-        if (dh = (new Date()).getHours() >= 19 || (dh <= 6)) {
+        document.styleSheets[0].cssRules[0].style.backgroundColor = localStorage['colorPrimary'] || '#009788'
+        if (shouldApplyDarkStyle()) {
             document.styleSheets[0].cssRules[0].style.backgroundColor = 'black'
         }
     </script>

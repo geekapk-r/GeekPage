@@ -6,6 +6,15 @@
   <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width">
   <title>GeekApk 的故事</title>
+
+  <meta property="og:title" content="GeekApk 的故事">
+  <meta name="description" content="一个辣鸡应用市场存在的理由">
+  <meta property="og:description" content="辣鸡应用市场存在的理由">
+  <link rel="canonical" href="https://geekapk.org/">
+  <meta property="og:url" content="https://geekapk.org/about/">
+  <meta property="og:site_name" content="GeekApk Project">
+  <meta property="og:image" content="https://geekapk.org/favicon.png">
+
   <style type="text/css" media="screen">
     body {
       background-color: #f1f1f1;
@@ -62,7 +71,7 @@
   <!-- End Matomo Code -->
 
   <script>
-    if (dh = (new Date()).getHours() >= 19 || (dh <= 6)) {
+    if (shouldApplyDarkStyle()) {
       document.styleSheets[0].cssRules[0].style.color = 'white';
       document.styleSheets[0].cssRules[0].style.backgroundColor = 'black';
       document.styleSheets[0].cssRules[3].style.color = 'white'
