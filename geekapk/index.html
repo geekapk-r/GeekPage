@@ -8,6 +8,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <link rel="dns-prefetch" href="//api.geekapk.org">
+    <link rel="dns-prefetch" href="//piwik.geekapk.org">
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+
     <meta name="theme-color" content="#009788">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -123,6 +128,8 @@
         })();
     </script>
     <!-- End Matomo Code -->
+
+    <script src="https://geekapk.org/geekstyle.js"></script>
 
     <!-- delaunay copied from https://crystal-lang.org/ -->
     <script>
@@ -315,6 +322,11 @@
                     console.log("Bye-bye! ;-)");
                     bot.onclick = null
                 }
+                if (localStorage['colorPrimary'] != null)
+                  styleupbg(localStorage['colorPrimary']);
+                if (localStorage['colorFab'] != null)
+                  styleupgh(localStorage['colorFab']);
+
                 if (shouldApplyDarkStyle()) {
                     styleupbg('black');
                     styleupgh('grey');

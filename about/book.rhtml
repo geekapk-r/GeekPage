@@ -48,6 +48,14 @@
       text-decoration: none
     }
   </style>
+
+  <script src="https://geekapk.org/geekstyle.js"></script>
+  <script>
+    document.styleSheets[0].cssRules[0].style.color = localStorage['colorPrimary'] || '#009788';
+    if (shouldApplyDarkStyle()) {
+      document.styleSheets[0].cssRules[0].style.color = 'black';
+    }
+  </script>
 </head>
 <%
   paras = bok.split '----------'
