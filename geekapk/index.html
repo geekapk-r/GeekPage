@@ -369,6 +369,14 @@
         <a href="https://wiki.geekapk.org" class="mdui-btn mdui-btn-raised mdui-color-white mdui-ripple mdui-ripple-yellow">应用 Wiki</a>
         <a href="https://geekapk.org/web" class="mdui-btn mdui-btn-raised mdui-color-white mdui-text-color-teal">加入社区</a>
     </div>
-
+    <button class="mdui-fab mdui-color-white mdui-fab-fixed mdui-ripple" mdui-dialog="{target: '#dialog-clients'}" mdui-tooltip="{content: '获取客户端'}"><i class="mdui-icon material-icons">get_app</i></button>
+    <div class="mdui-dialog" id="dialog-clients">
+      <div class="mdui-dialog-title">积极维护中的 GeekApk 客户端</div>
+      <div class="mdui-dialog-content">GeekApk 是一个开放、自由的应用市场。她的后端只提供 API，爱好者们使用 GeekApk 的开放 API 为她编写易于使用的客户端程序</div>
+      <div class="mdui-dialog-actions mdui-dialog-actions-stacked">
+        <button class="mdui-btn mdui-ripple">Gee (Java Android client)</button>
+        <button class="mdui-btn mdui-ripple">Gaee (Ruby API library and cli client)</button>
+      </div>
+    </div>
     <div id="delaunay"></div>
 </body>
